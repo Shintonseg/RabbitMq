@@ -4,6 +4,11 @@ spring:
     port: 5672
     username: guest
     password: guest
-  exchange-name: smart-engineer-exchange
-  routing-key: smart-engineer-routing-key
-  queue-name: smart-engineer-queue
+  queue:
+    name: smart-engineer-queue
+    json-name: smart-engineer-json-queue
+  exchange:
+    name: smart-engineer-exchange
+  routing:
+    key: smart-engineer-routing-key
+    json-key: smart-engineer-routing-json-key
